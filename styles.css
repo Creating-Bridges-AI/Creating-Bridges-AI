@@ -131,7 +131,9 @@ h2.subheading {
 
 /* New Section 1 */
 .ai-benefits {
-  background-color: var(--light-accent);
+  max-width: 2000px;
+  background-color: var(--primary-accent);
+  color: white;
   padding: 4rem 2rem;
   margin-top: 4rem;
   text-align: left;
@@ -154,8 +156,8 @@ h2.subheading {
 
 /* New Section 2 */
 .ai-roadmap {
-  background-color: var(--primary-accent);
-  color: white;
+   max-width: 2000px;
+  background-color: white;
   padding: 4rem 2rem;
   text-align: left;
 }
