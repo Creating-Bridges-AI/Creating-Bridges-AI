@@ -21,7 +21,7 @@ body {
 /* Header */
 header {
   border-bottom: 4px solid var(--primary-accent);
-  background-color: white;
+  background-color: var(--bg-color);
 }
 
 .nav-container {
@@ -34,7 +34,7 @@ header {
 }
 
 .logo img {
-  height: 50px;
+  height: 80px;
 }
 
 nav ul {
