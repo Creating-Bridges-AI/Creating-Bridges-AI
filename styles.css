@@ -1,3 +1,6 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&family=Poppins:wght@400;600&display=swap');
+
 /* Basic Reset */
 * {
   margin: 0;
@@ -11,10 +14,10 @@ html {
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #333;
+  font-family: 'DM Sans', sans-serif;
+  color: #38373b;
   line-height: 1.6;
-  background-color: #f9f9f9;
+  background-color: #f9f7f4;
 }
 
 /* Layout Containers */
@@ -28,13 +31,14 @@ body {
 /* Header */
 header {
   background-color: #38373b;
-  color: white;
+  color: #f9f7f4;
   padding: 1rem 0;
 }
 
 .logo h1 {
+  font-family: 'Poppins', sans-serif;
   font-size: 1.5rem;
-  color: #bba8d4;
+  color: #8f77ab;
 }
 
 nav {
@@ -48,9 +52,10 @@ nav {
 }
 
 .nav-links li a {
-  color: white;
+  color: #f9f7f4;
   text-decoration: none;
   font-weight: 500;
+  font-family: 'Poppins', sans-serif;
 }
 
 .nav-links li a:hover {
@@ -59,12 +64,13 @@ nav {
 
 /* Hero Section */
 .hero {
-  background-color: #eae7f1;
+  background-color: #d3d9d0;
   text-align: center;
   padding: 3rem 1rem;
 }
 
 .hero h2 {
+  font-family: 'Poppins', sans-serif;
   font-size: 2rem;
   margin-bottom: 1rem;
   color: #38373b;
@@ -77,11 +83,12 @@ nav {
 
 /* Services Section */
 .services {
-  background-color: #fff;
+  background-color: #f9f7f4;
   padding: 3rem 1rem;
 }
 
 .services h2 {
+  font-family: 'Poppins', sans-serif;
   text-align: center;
   margin-bottom: 2rem;
   color: #38373b;
@@ -95,7 +102,8 @@ nav {
 }
 
 .service-item {
-  background-color: #f1f1f1;
+  background-color: #ffffff;
+  border: 1px solid #d3d9d0;
   border-radius: 8px;
   padding: 1.5rem;
   width: 300px;
@@ -103,24 +111,26 @@ nav {
 }
 
 .service-item h3 {
+  font-family: 'Poppins', sans-serif;
   margin-bottom: 0.5rem;
   color: #38373b;
 }
 
 /* Contact Section */
 .contact {
-  background-color: #eae7f1;
+  background-color: #d3d9d0;
   text-align: center;
   padding: 3rem 1rem;
 }
 
 .contact h2 {
+  font-family: 'Poppins', sans-serif;
   color: #38373b;
   margin-bottom: 1rem;
 }
 
 .contact a {
-  color: #6d5cae;
+  color: #8f77ab;
   font-weight: bold;
   text-decoration: none;
 }
@@ -132,7 +142,7 @@ nav {
 /* Footer */
 footer {
   background-color: #38373b;
-  color: white;
+  color: #f9f7f4;
   text-align: center;
   padding: 2rem 1rem;
 }
@@ -146,7 +156,7 @@ footer {
 }
 
 .footer-links li a {
-  color: white;
+  color: #f9f7f4;
   text-decoration: none;
 }
 
