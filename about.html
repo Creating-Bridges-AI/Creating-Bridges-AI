@@ -4,12 +4,104 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Us | Creating Bridges AI</title>
-  <meta name="description" content="Learn about our mission, story, and why businesses choose Creating Bridges AI for tailored AI training and tools.">
+  <meta name="description" content="Learn more about Creating Bridges AI—our mission, our story, and why businesses trust us to integrate AI into their workflows.">
   <link rel="stylesheet" href="styles.css" />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-</head>
+  <style>
+    .about-section {
+      max-width: 1200px;
+      margin: 4rem auto;
+      padding: 0 2rem;
+    }
 
+    .about-section h1 {
+      font-size: 3rem;
+      font-family: 'Poppins', sans-serif;
+      color: var(--text-color);
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .about-box {
+      background-color: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+      padding: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .about-box h2 {
+      font-size: 2rem;
+      color: var(--primary-accent);
+      margin-bottom: 1rem;
+    }
+
+    .about-box p {
+      font-family: 'DM Sans', sans-serif;
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    .milestones {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      padding-left: 1rem;
+    }
+
+    .milestone {
+      border-left: 4px solid var(--primary-accent);
+      padding-left: 1rem;
+    }
+
+    .why-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .why-card {
+      flex: 1 1 300px;
+      background-color: var(--light-accent);
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+      text-align: center;
+    }
+
+    .why-card h3 {
+      font-size: 1.5rem;
+      color: var(--text-color);
+      margin-bottom: 1rem;
+    }
+
+    .cta-box {
+      background-color: var(--secondary-accent);
+      border-radius: 16px;
+      padding: 2rem;
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .cta-box h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta-box a {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: var(--primary-accent);
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+  </style>
+</head>
 <body>
+
   <!-- Header -->
   <header>
     <div class="nav-container">
@@ -18,91 +110,61 @@
       </div>
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">FAQ</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="#">Contact Us</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Main -->
-  <main>
-    <!-- Page Banner -->
-    <section style="padding: 4rem 2rem;">
-      <h1>About Creating Bridges AI</h1>
-      <h2 class="subheading">Helping small businesses bridge the gap between business and AI</h2>
-    </section>
+  <!-- About Content -->
+  <main class="about-section">
+    <h1>About Creating Bridges AI</h1>
 
-    <!-- Mission Section -->
-    <section class="ai-integration-section">
-      <div class="ai-integration-container">
-        <div class="ai-integration-block">
-          <h3>Our Mission</h3>
-          <p style="text-align: center; max-width: 800px; margin: 0 auto;">
-            At Creating Bridges AI, our mission is to empower small and mid-sized businesses by simplifying and personalizing AI adoption. We make automation and AI tools easy to understand, implement, and use—so you can focus on what matters most: growing your business.
-          </p>
-        </div>
-      </div>
-    </section>
+    <div class="about-box">
+      <h2>Our Mission</h2>
+      <p>We exist to bridge the gap between small businesses and the rapidly evolving world of artificial intelligence. Our mission is to simplify AI and make it accessible, so businesses can automate smarter, operate more efficiently, and grow confidently.</p>
+    </div>
 
-    <!-- Story Section -->
-    <section class="ai-solutions">
+    <div class="about-box">
       <h2>Our Story</h2>
-      <div class="solution-grid">
-        <div class="solution-box">
-          <h3>2023: The Spark</h3>
-          <p>After years of running service businesses, we saw how AI could streamline operations—but no one was making it accessible for small companies. That had to change.</p>
+      <div class="milestones">
+        <div class="milestone">
+          <strong>2024:</strong> Our founders, a father-daughter team, launched the company to help home service businesses embrace AI.
         </div>
-        <div class="solution-box">
-          <h3>2024: Building the Bridge</h3>
-          <p>We launched Creating Bridges AI, built real solutions for real businesses, and developed our hands-on training model that breaks the tech barrier.</p>
+        <div class="milestone">
+          <strong>2025:</strong> Released our first AI Empowerment Program, serving over 50 small businesses nationwide.
         </div>
-        <div class="solution-box">
-          <h3>2025: Growth & Impact</h3>
-          <p>We've helped dozens of businesses automate tasks, train teams, and improve operations—all with affordable AI tools that match their goals and budget.</p>
-        </div>
-        <div class="solution-box">
-          <h3>Today</h3>
-          <p>We're scaling our mission with online courses, personalized support, and AI-powered systems—designed for the everyday business owner, not just the tech-savvy.</p>
+        <div class="milestone">
+          <strong>Today:</strong> We continue to develop custom AI training, tools, and automations designed for everyday workflows.
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- Why Choose Us Section -->
-    <section class="ai-integration-section">
-      <div class="ai-integration-container">
-        <div class="ai-integration-block">
-          <h3>Why Choose Us</h3>
-          <div class="card-grid">
-            <div class="card">
-              <div class="card-title">Small-Business Focus</div>
-              <p>We specialize in helping small teams get big results with AI—no tech degree required.</p>
-            </div>
-            <div class="card">
-              <div class="card-title">Custom, Not Cookie-Cutter</div>
-              <p>Everything we build is tailored to your goals, your workflows, and your level of experience.</p>
-            </div>
-            <div class="card">
-              <div class="card-title">Ongoing Support</div>
-              <p>From setup to growth, we stick with you to keep your AI tools running smoothly and delivering value.</p>
-            </div>
-          </div>
+    <div class="about-box">
+      <h2>Why Choose Us</h2>
+      <div class="why-cards">
+        <div class="why-card">
+          <h3>Small Business Focus</h3>
+          <p>We understand the unique challenges small businesses face because we are one. Our solutions are built for simplicity and results.</p>
+        </div>
+        <div class="why-card">
+          <h3>Done-With-You Support</h3>
+          <p>We don’t just deliver tools—we walk alongside you with training, configuration, and clear communication every step of the way.</p>
+        </div>
+        <div class="why-card">
+          <h3>Customized, Not Generic</h3>
+          <p>No cookie-cutter approaches here. We build your AI solutions around your exact processes and team structure.</p>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- CTA Section -->
-    <section class="ai-solutions" style="text-align: center;">
-      <h2>Ready to See What AI Can Do for You?</h2>
-      <p style="max-width: 700px; margin: 0 auto 2rem;">
-        Whether you're curious about what’s possible or ready to dive in, we’re here to help you take the next step. Schedule a call and let's build your AI strategy together.
-      </p>
-      <a href="contact.html" style="display: inline-block; background-color: var(--primary-accent); color: white; padding: 1rem 2rem; border-radius: 8px; font-weight: 600; text-decoration: none;">
-        Contact Us
-      </a>
-    </section>
+    <div class="cta-box">
+      <h2>Ready to See How AI Can Work for You?</h2>
+      <a href="#">Contact Us Today</a>
+    </div>
   </main>
 
   <!-- Footer -->
@@ -116,7 +178,7 @@
         <a href="#">Services</a>
         <a href="#">FAQ</a>
         <a href="#">Blog</a>
-        <a href="contact.html">Contact Us</a>
+        <a href="#">Contact Us</a>
         <a href="#">Terms & Conditions</a>
         <a href="#">Privacy Policy</a>
       </div>
@@ -128,5 +190,6 @@
       </div>
     </div>
   </footer>
+
 </body>
 </html>
