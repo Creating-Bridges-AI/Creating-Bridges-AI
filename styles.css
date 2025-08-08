@@ -34,7 +34,7 @@ header {
 
 .nav-container {
   max-width: 1920px;
-  max-height: 60px;
+  max-height: 100px;
   margin: 0 auto;
   padding: 1rem 3rem;
   display: flex;
