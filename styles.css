@@ -1,5 +1,4 @@
 :root {
-
   --bg-color: #f9f7f4;
   --text-color: #38373b;
   --primary-accent: #8f77ab;
@@ -8,13 +7,16 @@
 }
 
 html {
-  font-size: 16px; /* 1rem = 16px */
+  font-size: 16px;
+  height: 100%;
 }
 
-* {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -22,21 +24,24 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* Header */
 header {
-  border-bottom: 4px solid var(--primary-accent);
-  background-color: var(--bg-color);
   position: sticky;
   top: 0;
   z-index: 1000;
+  background-color: var(--bg-color);
+  border-bottom: 4px solid var(--primary-accent);
+  width: 100%;
 }
 
 .nav-container {
   max-width: 1920px;
   max-height: 80px;
-  
   margin: 0 auto;
   padding: 1rem 3rem;
   display: flex;
@@ -67,6 +72,7 @@ nav a:hover {
 
 /* Main Content */
 main {
+  flex: 1 0 auto;
   max-width: 1400px;
   margin: 0 auto;
   padding: 4rem 1.5rem;
@@ -98,7 +104,7 @@ h2.subheading {
 .card {
   background-color: white;
   border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   padding: 2rem;
   flex: 1 1 350px;
   max-width: 500px;
@@ -138,7 +144,7 @@ h2.subheading {
 
 /* Why AI Integration Section */
 .ai-integration-section {
-  background-color: #d3d9d0;
+  background-color: var(--secondary-accent);
   padding: 4rem 2rem;
   border-radius: 20px;
   margin: 4rem auto;
@@ -158,10 +164,9 @@ h2.subheading {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-/* Main Section Heading */
 .ai-integration-block h3 {
   font-family: 'Poppins', sans-serif;
-  color: #38373b;
+  color: var(--text-color);
   font-size: 2.5rem;
   font-weight: 700;
   margin: 0;
@@ -170,22 +175,20 @@ h2.subheading {
   border-radius: 12px;
 }
 
-/* Subheadings for Each Reason */
 .reason-block h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 2rem;
   font-weight: 550;
-  color: #38373b;
+  color: var(--text-color);
   margin-bottom: 1rem;
 }
 
 .reason-block p {
   font-family: 'DM Sans', sans-serif;
-  color: #38373b;
+  color: var(--text-color);
   line-height: 1.7;
   font-size: 1rem;
 }
-
 
 /* High-Impact AI Solutions Section */
 .ai-solutions {
@@ -199,17 +202,16 @@ h2.subheading {
   font-family: 'Poppins', sans-serif;
   font-size: 2.5rem;
   font-weight: 700;
-  color: #38373b;
+  color: var(--text-color);
   margin-bottom: 3rem;
 }
 
 .solution-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Always 2 columns by default */
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
 }
 
-/* Stack to 1 column on small screens */
 @media (max-width: 768px) {
   .solution-grid {
     grid-template-columns: 1fr;
@@ -220,7 +222,7 @@ h2.subheading {
   border: 4px solid var(--primary-accent);
   border-radius: 16px;
   padding: 2rem;
-  background-color: #f9f7f4;
+  background-color: var(--bg-color);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
 }
 
@@ -228,47 +230,23 @@ h2.subheading {
   font-family: 'Poppins', sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
-  color: #38373b;
+  color: var(--text-color);
   margin-bottom: 1rem;
 }
 
 .solution-box p {
   font-family: 'DM Sans', sans-serif;
   font-size: 1rem;
-  color: #38373b;
+  color: var(--text-color);
   line-height: 1.6;
-}
-
-
-/* Ensure consistent box-sizing */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* Full-height layout */
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-main {
-  flex: 1;
 }
 
 /* Footer Styles */
 footer {
+  flex-shrink: 0;
   background-color: var(--secondary-accent);
   padding: 1rem 3rem;
-  margin-top: 4rem;
+  margin-top: auto;
   width: 100%;
   box-sizing: border-box;
 }
@@ -308,7 +286,6 @@ footer {
   color: var(--primary-accent);
 }
 
-/* Responsive Footer */
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
