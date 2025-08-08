@@ -27,8 +27,6 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   line-height: 1.6;
-  
-  /* ADD THESE FLEXBOX PROPERTIES: */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -56,7 +54,7 @@ header {
 
 .logo img {
   height: 80px;
-  display: block; /* Prevents inline spacing issues */
+  display: block;
 }
 
 nav ul {
@@ -70,7 +68,7 @@ nav a {
   text-decoration: none;
   color: var(--text-color);
   font-weight: 500;
-  transition: color 0.3s ease; /* Smooth hover transition */
+  transition: color 0.3s ease;
 }
 
 nav a:hover {
@@ -81,7 +79,7 @@ nav a:hover {
 main {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 4rem 1.5rem;
+  padding: 5rem 1.5rem;
   text-align: center;
   flex: 1 0 auto;
 }
@@ -90,14 +88,14 @@ h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 3rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 h2.subheading {
   font-size: 1.25rem;
   font-weight: 500;
   color: var(--primary-accent);
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 
 /* Cards */
@@ -106,6 +104,7 @@ h2.subheading {
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: center;
+  margin-bottom: 5rem;
 }
 
 .card {
@@ -151,24 +150,24 @@ h2.subheading {
 }
 
 /* Why AI Integration Section */
-.ai-integration-section {
+ai-integration-section {
   background-color: var(--secondary-accent);
-  padding: 4rem 2rem;
+  padding: 5rem 2rem;
   border-radius: 20px;
-  margin: 4rem auto;
+  margin: 5rem auto;
   max-width: 1200px;
-  width: calc(100% - 4rem); /* Prevents overflow on small screens */
+  width: calc(100% - 4rem);
 }
 
 .ai-integration-container {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .ai-integration-block {
   background-color: white;
-  padding: 2rem;
+  padding: 2.5rem;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
@@ -202,10 +201,10 @@ h2.subheading {
 /* High-Impact AI Solutions Section */
 .ai-solutions {
   max-width: 1200px;
-  margin: 4rem auto;
+  margin: 5rem auto;
   padding: 0 2rem;
   text-align: center;
-  width: calc(100% - 4rem); /* Prevents overflow */
+  width: calc(100% - 4rem);
 }
 
 .ai-solutions h2 {
@@ -219,7 +218,7 @@ h2.subheading {
 .solution-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  gap: 2.5rem;
 }
 
 .solution-box {
@@ -245,18 +244,18 @@ h2.subheading {
   line-height: 1.6;
 }
 
-/* Footer Styles - FIXED */
+/* Footer Styles */
 footer {
   background-color: var(--secondary-accent);
-  padding: 1rem 0; /* Remove horizontal padding from footer */
-  margin-top: auto; /* This pushes footer to bottom */
-  width: 100%; /* Ensure full width */
+  padding: 1.5rem 0;
+  margin-top: auto;
+  width: 100%;
 }
 
 .footer-container {
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 3rem; /* Move padding here */
+  padding: 0 3rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -266,7 +265,7 @@ footer {
 
 .footer-logo img {
   height: 80px;
-  display: block; /* Prevents inline spacing issues */
+  display: block;
 }
 
 .footer-links,
@@ -283,7 +282,7 @@ footer {
   text-decoration: none;
   font-weight: 500;
   font-size: 0.95rem;
-  transition: color 0.3s ease; /* Smooth hover transition */
+  transition: color 0.3s ease;
 }
 
 .footer-links a:hover,
@@ -296,26 +295,26 @@ footer {
   .nav-container {
     padding: 1rem 1.5rem;
   }
-  
+
   main {
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
   }
-  
+
   h1 {
     font-size: 2.5rem;
   }
-  
+
   .ai-integration-section,
   .ai-solutions {
-    margin: 2rem auto;
+    margin: 3rem auto;
     padding: 2rem 1rem;
     width: calc(100% - 2rem);
   }
-  
+
   .solution-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .footer-container {
     flex-direction: column;
     align-items: center;
@@ -333,19 +332,19 @@ footer {
   .nav-container {
     padding: 1rem;
   }
-  
+
   .footer-container {
     padding: 0 1rem;
   }
-  
+
   h1 {
     font-size: 2rem;
   }
-  
+
   .ai-integration-block h3 {
     font-size: 2rem;
   }
-  
+
   .reason-block h4 {
     font-size: 1.5rem;
   }
