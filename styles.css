@@ -151,21 +151,30 @@ h2.subheading {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-.ai-integration-block h3
-{
+/* Main Section Heading - Vertically Centered */
+.ai-integration-block h3 {
   font-family: 'Poppins', sans-serif;
   color: #38373b;
-  font-size: 2.5rem; /* Matches other main headings */
+  font-size: 2.5rem;
   font-weight: 700;
-  margin-bottom: 1.5rem;
+  margin: 0;
   text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
 }
 
-.ai-integration-block h4 {
+/* Subheadings for Each Reason */
+.ai-integration-block .reason-block h4 {
   font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem; /* Slightly larger than before */
+  font-weight: 600;
   color: #38373b;
   margin-bottom: 1rem;
 }
+
 
 .ai-integration-block p {
   font-family: 'DM Sans', sans-serif;
