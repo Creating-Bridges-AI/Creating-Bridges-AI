@@ -240,11 +240,30 @@ h2.subheading {
 }
 
 
+/* Reset */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* Layout for sticky footer */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
 /* Footer */
 footer {
   background-color: var(--secondary-accent);
   padding: 1rem 3rem;
   margin-top: 4rem;
+  width: 100vw; /* Stretch full width */
 }
 
 .footer-container {
