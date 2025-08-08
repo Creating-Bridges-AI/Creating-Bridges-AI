@@ -173,7 +173,7 @@ h2.subheading {
 
 
 /* Subheadings for Each Reason */
-.ai-integration-block .reason-block h4 {
+.reason-block h4 {
   font-family: 'Poppins', sans-serif;
   font-size: 4rem;
   font-weight: 600;
@@ -182,7 +182,7 @@ h2.subheading {
 }
 
 
-.ai-integration-block p {
+.reason-block p {
   font-family: 'DM Sans', sans-serif;
   color: #38373b;
   line-height: 1.7;
