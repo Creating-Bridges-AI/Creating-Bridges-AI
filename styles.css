@@ -251,14 +251,10 @@ footer {
   footer {
   flex-shrink: 0;
   background-color: var(--secondary-accent);
-  width: 100vw; /* Full viewport width */
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw !important;
-  margin-right: -50vw !important;
-  margin-top: auto !important;
-  padding: 0 !important;
+  padding: 1rem 3rem;
+  margin-top: auto;
+  max-width: 2500px;
+  box-sizing: border-box;
 }
 
 .footer-container {
