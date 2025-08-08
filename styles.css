@@ -6,6 +6,10 @@
   --light-accent: #f1eeea;
 }
 
+html {
+  font-size: 16px; /* 1rem = 16px */
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -145,7 +149,7 @@ h2.subheading {
 }
 
 .ai-integration-block {
-  background-color: #f9f7f4;
+  background-color: white;
   padding: 2rem;
   border-radius: 16px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
