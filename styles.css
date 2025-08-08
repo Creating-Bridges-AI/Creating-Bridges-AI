@@ -27,11 +27,11 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   line-height: 1.6;
+  
+  /* ADD THESE FLEXBOX PROPERTIES: */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  margin: 0;
-  padding: 0;
 }
 
 /* Header */
@@ -79,12 +79,11 @@ nav a:hover {
 
 /* Main Content */
 main {
-  flex: 1 0 auto;
   max-width: 1400px;
   margin: 0 auto;
   padding: 4rem 1.5rem;
   text-align: center;
-  width: 100%; /* Ensures proper width calculation */
+  flex: 1 0 auto;
 }
 
 h1 {
@@ -248,17 +247,14 @@ h2.subheading {
 
 /* Footer Styles - FIXED */
 footer {
-  footer {
-  flex-shrink: 0;
   background-color: var(--secondary-accent);
-  padding: 1rem 3rem;
-  margin-top: auto;
-  max-width: 2500px;
-  box-sizing: border-box;
+  padding: 1rem 0; /* Remove horizontal padding from footer */
+  margin-top: auto; /* This pushes footer to bottom */
+  width: 100%; /* Ensure full width */
 }
 
 .footer-container {
-  max-width: 1920px; /* Match nav-container max-width for consistency */
+  max-width: 1920px;
   margin: 0 auto;
   padding: 0 3rem; /* Move padding here */
   display: flex;
@@ -266,7 +262,6 @@ footer {
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  box-sizing: border-box;
 }
 
 .footer-logo img {
