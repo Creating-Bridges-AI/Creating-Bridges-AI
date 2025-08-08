@@ -129,29 +129,40 @@ h2.subheading {
   color: var(--primary-accent);
 }
 
-/* New Section 1 */
-.ai-benefits {
-  max-width: 2000px;
-  background-color: var(--primary-accent);
-  color: white;
+/* Why AI Integration Section */
+.ai-integration-section {
+  background-color: #d3d9d0;
   padding: 4rem 2rem;
-  margin-top: 4rem;
-  text-align: left;
+  border-radius: 20px;
+  margin: 4rem auto;
+  max-width: 1200px;
 }
 
-.ai-benefits h3 {
+.ai-integration-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.ai-integration-block {
+  background-color: #f9f7f4;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.ai-integration-block h3,
+.ai-integration-block h4 {
   font-family: 'Poppins', sans-serif;
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+  color: #38373b;
+  margin-bottom: 1rem;
 }
 
-.ai-benefits ul {
-  list-style-type: disc;
-  margin: 1rem 0 2rem 1.5rem;
-}
-
-.ai-benefits li {
-  margin-bottom: 0.75rem;
+.ai-integration-block p {
+  font-family: 'DM Sans', sans-serif;
+  color: #38373b;
+  line-height: 1.7;
+  font-size: 1rem;
 }
 
 /* New Section 2 */
