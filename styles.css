@@ -6,14 +6,20 @@
   --light-accent: #f1eeea;
 }
 
+/* Enhanced CSS Reset */
 html {
-  font-size: 16px; /* 1rem = 16px */
-}
-
-* {
+  font-size: 16px;
+  height: 100%;
   margin: 0;
   padding: 0;
+}
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -21,15 +27,21 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   line-height: 1.6;
+  
+  /* ADD THESE FLEXBOX PROPERTIES: */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* Header */
 header {
-  border-bottom: 4px solid var(--primary-accent);
-  background-color: var(--bg-color);
   position: sticky;
   top: 0;
   z-index: 1000;
+  background-color: var(--bg-color);
+  border-bottom: 4px solid var(--primary-accent);
+  width: 100%;
 }
 
 .nav-container {
@@ -44,6 +56,7 @@ header {
 
 .logo img {
   height: 80px;
+  display: block; /* Prevents inline spacing issues */
 }
 
 nav ul {
@@ -57,6 +70,7 @@ nav a {
   text-decoration: none;
   color: var(--text-color);
   font-weight: 500;
+  transition: color 0.3s ease; /* Smooth hover transition */
 }
 
 nav a:hover {
@@ -69,11 +83,12 @@ main {
   margin: 0 auto;
   padding: 4rem 1.5rem;
   text-align: center;
+  flex: 1 0 auto;
 }
 
 h1 {
   font-family: 'Poppins', sans-serif;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
   margin-bottom: 1rem;
 }
@@ -96,7 +111,7 @@ h2.subheading {
 .card {
   background-color: white;
   border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
   padding: 2rem;
   flex: 1 1 350px;
   max-width: 500px;
@@ -132,15 +147,17 @@ h2.subheading {
   position: absolute;
   left: 0;
   color: var(--primary-accent);
+  font-weight: bold;
 }
 
 /* Why AI Integration Section */
 .ai-integration-section {
-  background-color: #d3d9d0;
+  background-color: var(--secondary-accent);
   padding: 4rem 2rem;
   border-radius: 20px;
   margin: 4rem auto;
   max-width: 1200px;
+  width: calc(100% - 4rem); /* Prevents overflow on small screens */
 }
 
 .ai-integration-container {
@@ -156,10 +173,9 @@ h2.subheading {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
 }
 
-/* Main Section Heading */
 .ai-integration-block h3 {
   font-family: 'Poppins', sans-serif;
-  color: #38373b;
+  color: var(--text-color);
   font-size: 2.5rem;
   font-weight: 700;
   margin: 0;
@@ -168,57 +184,79 @@ h2.subheading {
   border-radius: 12px;
 }
 
-/* Subheadings for Each Reason */
 .reason-block h4 {
   font-family: 'Poppins', sans-serif;
-  font-size: 3rem;
-  font-weight: 600;
-  color: #38373b;
-  margin-bottom: 3rem;
+  font-size: 2rem;
+  font-weight: 550;
+  color: var(--text-color);
+  margin-bottom: 1rem;
 }
 
 .reason-block p {
   font-family: 'DM Sans', sans-serif;
-  color: #38373b;
+  color: var(--text-color);
   line-height: 1.7;
   font-size: 1rem;
 }
 
-
-/* New Section 2 */
-.ai-roadmap {
-   max-width: 2000px;
-  background-color: white;
-  padding: 4rem 2rem;
-  text-align: left;
+/* High-Impact AI Solutions Section */
+.ai-solutions {
+  max-width: 1200px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+  text-align: center;
+  width: calc(100% - 4rem); /* Prevents overflow */
 }
 
-.ai-roadmap h3 {
+.ai-solutions h2 {
   font-family: 'Poppins', sans-serif;
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 3rem;
 }
 
-.ai-roadmap .cta {
-  margin-top: 2rem;
-  font-weight: bold;
+.solution-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
 
-.ai-roadmap a {
-  color: white;
-  text-decoration: underline;
+.solution-box {
+  border: 4px solid var(--primary-accent);
+  border-radius: 16px;
+  padding: 2rem;
+  background-color: var(--bg-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
 }
 
-/* Footer */
+.solution-box h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+
+.solution-box p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Footer Styles - FIXED */
 footer {
   background-color: var(--secondary-accent);
-  padding: 1rem 3rem;
-  margin-top: 4rem;
+  padding: 1rem 0; /* Remove horizontal padding from footer */
+  margin-top: auto; /* This pushes footer to bottom */
+  width: 100%; /* Ensure full width */
 }
 
 .footer-container {
   max-width: 1920px;
   margin: 0 auto;
+  padding: 0 3rem; /* Move padding here */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -228,6 +266,7 @@ footer {
 
 .footer-logo img {
   height: 80px;
+  display: block; /* Prevents inline spacing issues */
 }
 
 .footer-links,
@@ -244,6 +283,7 @@ footer {
   text-decoration: none;
   font-weight: 500;
   font-size: 0.95rem;
+  transition: color 0.3s ease; /* Smooth hover transition */
 }
 
 .footer-links a:hover,
@@ -251,21 +291,62 @@ footer {
   color: var(--primary-accent);
 }
 
-/* Responsive */
+/* Responsive Design */
 @media (max-width: 768px) {
-  .nav-container,
+  .nav-container {
+    padding: 1rem 1.5rem;
+  }
+  
+  main {
+    padding: 2rem 1rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  .ai-integration-section,
+  .ai-solutions {
+    margin: 2rem auto;
+    padding: 2rem 1rem;
+    width: calc(100% - 2rem);
+  }
+  
+  .solution-grid {
+    grid-template-columns: 1fr;
+  }
+  
   .footer-container {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 0 1.5rem;
   }
 
   .footer-links,
   .social-icons {
     justify-content: center;
   }
+}
 
+@media (max-width: 480px) {
+  .nav-container {
+    padding: 1rem;
+  }
+  
+  .footer-container {
+    padding: 0 1rem;
+  }
+  
   h1 {
     font-size: 2rem;
+  }
+  
+  .ai-integration-block h3 {
+    font-size: 2rem;
+  }
+  
+  .reason-block h4 {
+    font-size: 1.5rem;
   }
 }
