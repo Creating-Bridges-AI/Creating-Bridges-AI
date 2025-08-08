@@ -163,13 +163,15 @@ h2.subheading {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: 1.5rem; /* Reduced from 2rem to 1.5rem */
+  border-radius: 12px;
 }
+
 
 /* Subheadings for Each Reason */
 .ai-integration-block .reason-block h4 {
   font-family: 'Poppins', sans-serif;
-  font-size: 1.4rem; /* Slightly larger than before */
+  font-size: 1.8rem; /* Slightly larger than before */
   font-weight: 600;
   color: #38373b;
   margin-bottom: 1rem;
